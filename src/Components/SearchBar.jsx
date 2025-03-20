@@ -15,7 +15,7 @@ const results = json.filter((user) => {
     value &&
     user &&
     user.name &&
-    user.name.toLowerCase().includes(value)
+    user.name.toUpperCase().toLowerCase().includes(value.toLowerCase())
   )
 })
 
